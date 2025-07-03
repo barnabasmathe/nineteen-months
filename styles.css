@@ -1,0 +1,85 @@
+* {
+        box-sizing: border-box;
+}
+
+body {
+        margin: 0;
+        background-color: rgb(61, 61, 61);
+}
+
+a {
+        text-decoration: underline;
+        color: inherit
+}
+
+#video {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+}
+
+#download-btn {
+        position: relative;
+        font-size: 42px;
+        font-family: cursive;
+        height: 3.5rem;
+        padding: 0 2rem;
+        border-radius: 1.5rem;
+        background: transparent;
+        color: rgba(245, 245, 245, 0.5);
+        border: none;
+        cursor: pointer;
+        transition: all 0.2s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+#download-btn:hover {
+        color: rgba(245, 245, 245, 1);
+}
+
+
+#download-btn:active {
+        scale: 0.9;
+}
+
+#ics {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+}
+
+.content {
+        position: fixed;
+        justify-content: center;
+        align-self: center;
+        width: 100%;
+        padding: 100px;
+}
+
+#play-btn {
+        border: 0;
+        background: transparent;
+        box-sizing: border-box;
+        width: 0;
+        height: 72px;
+
+        border-color: transparent transparent transparent rgba(245, 245, 245, 0.5);
+        transition: 100ms all ease;
+        cursor: pointer;
+
+        border-style: solid;
+        border-width: 37px 0px 37px 60px;
+}
+
+#play-btn.paused {
+        border-style: double;
+        border-width: 0px 0px 0px 60px;
+}
+
+#play-btn:hover {
+        border-color: transparent transparent transparent rgba(245, 245, 245, 1);
+}
